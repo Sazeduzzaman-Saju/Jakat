@@ -7,7 +7,7 @@ body {
 }
 
 :root {
-  --button-bg-color: #024F30;
+  --main-color: #024F30;
   --button-hover-bg: #D3A900;
   --navigation-color: white;
   --paragraph-text-color: dimgray;
@@ -15,6 +15,12 @@ body {
   --main-bg: dimgray;
   --transparent-bg-color: #bdc1c600;
 
+}
+
+.option {
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -46,7 +52,7 @@ p {
   position: fixed;
   width: 100%;
   padding-top: 102px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
   box-shadow: 5px 5px 35px white;
   z-index: 9;
 
@@ -108,7 +114,7 @@ p {
 .donate-btn {
   color: white;
   text-decoration: none;
-  background-color: var(--button-bg-color);
+  background-color: var(--main-color);
   padding: 10px 20px;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -129,15 +135,17 @@ p {
 .top-banner {
   margin-top: -110px;
   background-image: url(../img/bg-1.png);
+  background-repeat: no-repeat;
   background-position: fixed;
+  background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
 }
 
 .top-content {
   background-color: black;
   opacity: 0.8;
-  padding: 150px 100px;
+  padding: 306px 100px;
   width: 40%;
   text-transform: capitalize;
 
@@ -154,7 +162,7 @@ p {
 .common-btn {
   color: white;
   text-decoration: none;
-  background-color: var(--button-bg-color);
+  background-color: var(--main-color);
   padding: 10px 20px;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -171,7 +179,7 @@ p {
 
 
 .content span {
-  background-image: linear-gradient(43deg, var(--button-bg-color), var(--button-hover-bg));
+  background-image: linear-gradient(43deg, var(--main-color), var(--button-hover-bg));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -212,4 +220,54 @@ p {
   to {
     border-right-color: transparent;
   }
+}
+
+/* top banner area start */
+
+.title {
+  font-size: 18px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #024F30;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.youtube {
+  width: 800px;
+  margin-left: 20%;
+  margin-right: 10%;
+  border: 10px solid #024F30;
+  box-shadow: 5px 5px 20px #024F30;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.helping-option {
+  width: 100%;
+  display: flex;
+
+}
+
+.option-01 {
+  width: 40%;
+  padding: 30px;
+  margin-left: 20px;
+  background-color: #024f3033;
+}
+
+.option-01 h3 {
+  width: 45%;
+  color: #024F30;
+}
+
+.option-01 p {
+  font-size: 16px;
+}
+
+.main {
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 30px;
 }
